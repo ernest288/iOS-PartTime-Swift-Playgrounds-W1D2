@@ -8,7 +8,6 @@
 //: Say we have a varaible we're going to use to keep track of how many bicycles we own:
 
 var bicycleCount = 100
-
 //: Now we want to print out a description of the number of bicycles we have:
 
 print("There are \(bicycleCount) bicycles")
@@ -49,7 +48,11 @@ if someThing == otherThing {
 
 bicycleCount = 1
 
-
+if bicycleCount < 2 {
+    print ("There is \(bicycleCount) bicycles.")
+} else {
+    print ("There are \(bicycleCount) bicycles.")
+}
 
 
 //: ### Challenge 2
@@ -58,6 +61,13 @@ bicycleCount = 1
 
 bicycleCount = 0
 
+if bicycleCount == 0 {
+    print ("There are zero bicycles.")
+} else if bicycleCount < 2{
+    print ("There is \(bicycleCount) bicycles.")
+} else {
+    print ("There are \(bicycleCount) bicycles.")
+}
 
 
 
@@ -68,7 +78,11 @@ bicycleCount = 0
 
 var inputString = "Do you like bicycles?"
 
-
+if inputString.contains("?") {
+    print("I think so!")
+}else{
+    print("You don't say!")
+}
 
 
 
